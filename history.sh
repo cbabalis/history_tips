@@ -6,7 +6,7 @@ cp -u *.html destination
 ln -s source dest
 type ls
 whatis ls
-alias testprep='cd ~/workspace/SDL_TestAutomation; http=; https=; HTTP=; HTTPS=; export python'
+alias testprep='cd ~/workspace/SDL_TestAutomation; http_proxy=; https_proxy=; HTTP_PROXY=; HTTPS_PROXY=; export python'
 # have the 5th field of the first line where tmpfs is
 df -h | grep -wm 1 "tmpfs" | awk '//{print $5}'
 # sort the 15 biggest files into current directory
