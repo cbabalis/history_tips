@@ -14,3 +14,4 @@ du -hsx * | sort -rh | head -15
 # workaround for vim, in case colorschemes are failing
 # place the themes into the following directory
 /usr/share/vim/vim74/colors # 74 could be whatever
+find ~ -type f -name *.jpg -size +1M | wc -l
