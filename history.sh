@@ -15,3 +15,6 @@ du -hsx * | sort -rh | head -15
 # place the themes into the following directory
 /usr/share/vim/vim74/colors # 74 could be whatever
 find ~ -type f -name *.jpg -size +1M | wc -l
+zless foo.txt.gz "equivalent to" gunzip -c foo.txt | less
+# to zip a directory (let it be playground) with ALL its subfolders (recursively) we do:
+zip -r playground.zip playground
