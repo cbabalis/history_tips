@@ -18,3 +18,5 @@ find ~ -type f -name *.jpg -size +1M | wc -l
 zless foo.txt.gz "equivalent to" gunzip -c foo.txt | less
 # to zip a directory (let it be playground) with ALL its subfolders (recursively) we do:
 zip -r playground.zip playground
+# to find any word of 5 letters with __j_r, you do:
+grep -i '^..j.r$' /usr/share/dict/words
