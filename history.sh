@@ -20,3 +20,9 @@ zless foo.txt.gz "equivalent to" gunzip -c foo.txt | less
 zip -r playground.zip playground
 # to find any word of 5 letters with __j_r, you do:
 grep -i '^..j.r$' /usr/share/dict/words
+locate --regex 'bin/(bz|gz|zip)'
+
+# text processing
+sort file1.txt file2.txt file3.txt > final_sorted_list.txt
+du -s /usr/share/* | sort -nr | head
+ls -s /usr/bin | sort -nr -k 5 | head
