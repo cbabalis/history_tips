@@ -27,8 +27,7 @@ sort file1.txt file2.txt file3.txt > final_sorted_list.txt
 du -s /usr/share/* | sort -nr | head
 ls -s /usr/bin | sort -nr -k 5 | head
 
-###############################################
-### bashrc here
+##################### bashrc here	############################
 
 # get current branch in git repo
 function parse_git_branch() {
@@ -78,5 +77,7 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[35m\]\A\[\e[m\]:\[\e[32m\]\w\[\e[m\]:\[\e[31m\]\`parse_git_branch\`\[\e[m\]\\$ "
-############ end here
+#################### end of bashrc here	#############################
 
+# difference between files
+diff -u file1.txt file2.txt
