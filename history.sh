@@ -81,3 +81,9 @@ export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\[\e[35m\]\A\[\e[m\]:\[\e[
 
 # difference between files
 diff -u file1.txt file2.txt
+# old_file and new_file are either single files or directories
+diff -Naur old_file new_file > diff_file
+
+# check spelling of the file
+sudo dnf install aspell-en
+aspell check file.txt
