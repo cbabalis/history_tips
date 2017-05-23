@@ -87,3 +87,8 @@ diff -Naur old_file new_file > diff_file
 # check spelling of the file
 sudo dnf install aspell-en
 aspell check file.txt
+
+# add directory to the path by adding to .bashrc file:
+export PATH=~/bin:"$PATH"
+# source .bashrc equivalent:
+. .bashrc
