@@ -92,3 +92,7 @@ aspell check file.txt
 export PATH=~/bin:"$PATH"
 # source .bashrc equivalent:
 . .bashrc
+
+# transfer swap to memory (when mem available, but swap is full for some reason)
+sudo swapoff -a
+sudo swapon -a
