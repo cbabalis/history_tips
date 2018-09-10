@@ -96,3 +96,8 @@ export PATH=~/bin:"$PATH"
 # transfer swap to memory (when mem available, but swap is full for some reason)
 sudo swapoff -a
 sudo swapon -a
+
+#re-enable bluetooth connection via A2DP (xfce problems, usually)
+sudo apt-get install pulseaudio-module-bluetooth
+pactl load-module module-bluetooth-discover
+# then just remove and connect to device (not pair! connect)
