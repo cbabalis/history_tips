@@ -109,3 +109,6 @@ cd vim
 make -j8
 sudo make install
 cp src/vim /usr/bin
+
+# for youcompleteme
+#https://github.com/Valloric/YouCompleteMe#linux-64-bit
