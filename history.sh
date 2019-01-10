@@ -101,3 +101,11 @@ sudo swapon -a
 sudo apt-get install pulseaudio-module-bluetooth
 pactl load-module module-bluetooth-discover
 # then just remove and connect to device (not pair! connect)
+
+# vim 8.1 manual installation https://gist.github.com/yevrah/21cdccc1dc65efd2a4712781815159fb
+git clone https://github.com/vim/vim.git
+cd vim
+#make distclean  # if you build Vim before
+make -j8
+sudo make install
+cp src/vim /usr/bin
