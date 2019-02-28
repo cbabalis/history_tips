@@ -112,3 +112,6 @@ cp src/vim /usr/bin
 
 # for youcompleteme
 #https://github.com/Valloric/YouCompleteMe#linux-64-bit
+
+# for conflicts between different branch checkouts, use
+git checkout -f
