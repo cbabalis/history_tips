@@ -115,3 +115,8 @@ cp src/vim /usr/bin
 
 # for conflicts between different branch checkouts, use
 git checkout -f
+
+# for checking the limit of recursions in system:
+ulimit -s
+# for changing it
+ulimit -s 16384 # ulimit -s <value>
