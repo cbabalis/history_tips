@@ -120,3 +120,7 @@ git checkout -f
 ulimit -s
 # for changing it
 ulimit -s 16384 # ulimit -s <value>
+
+# for setting up a working python environment out of the box
+python3 -m venv env
+source ./env/bin/activate
