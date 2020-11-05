@@ -124,3 +124,7 @@ ulimit -s 16384 # ulimit -s <value>
 # for setting up a working python environment out of the box
 python3 -m venv env
 source ./env/bin/activate
+
+# change monitors orientation and set another primary display
+xrandr --output HDMI-1 --left-of DP-2
+xrandr --output DP-2 --primary
